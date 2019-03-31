@@ -2,6 +2,15 @@
 
 An attachment is included [ponstmancollection](./api.postman_collection.json) 
 
+# List of Endpoint
+ **more detailed explanations in the [ponstmancollection](./api.postman_collection.json)**
+ - ### authenticated
+    - **PUT** {{serverip}}/api/products/productid
+    - **DEL** {{serverip}}/api/products/productid 
+ - ### not authenticated
+    - **GET** {{serverip}}/api/products/    
+    - **GET** {{serverip}}/api/products/productid
+    
 # future additions
   - Add unit tests
   - Creation of authenticated users
