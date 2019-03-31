@@ -5,8 +5,8 @@ const Constants = {
     Database: {
         route: 'mongodb://localhost:27017/products'
     },
-    jwt: {
-        key: 'fafawwwcaxzas'
+    token: {
+        key: 'asf81284812asfa?¿fa'
     }
 }
 module.exports = Constants

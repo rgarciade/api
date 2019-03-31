@@ -24,11 +24,12 @@ const DB_Products = class {
             let productToReturn = []
             Products.find({ _id: findData }, (err, ProductsDatas) => {
                 if (err) reject(err)
-                if (ProductsDatas && ProductsDatas.length > 0) {
-                    ProductsDatas.forEach(element => {
-                        productToReturn.push(this.transformProductData(element))
-                    });
+                if (!ProductsDatas || ProductsDatas.length < 1) {
+                    reject('error to find product')
                 }
+                ProductsDatas.forEach(element => {
+                    productToReturn.push(this.transformProductData(element))
+                });
                 resolve(productToReturn)
             })
         })
@@ -39,7 +40,7 @@ const DB_Products = class {
             Products.deleteOne({ _id: findData }, (err, productDeleted) => {
                 if (err) reject(err)
                 console.log(productDeleted)
-                if (productDeleted.ok && productDeleted.deletedCount > 0) {
+                if (productDeleted && productDeleted.ok && productDeleted.deletedCount > 0) {
                     resolve(`Product id:${findData} deleted`)
                 }
                 reject(`error to dilete id:${findData}`)

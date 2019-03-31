@@ -1,0 +1,209 @@
+{
+	"id": "57f6c039-cc4b-1dd2-01a7-4dde750b4e98",
+	"name": "api",
+	"description": "",
+	"order": [
+		"c78256f9-c2cd-8c51-9a1b-1cfb22122d60",
+		"e74c5e35-8499-5767-15ca-937a58bf3f7d",
+		"d3ca3463-476c-e715-2b8d-463ef7a7d97d",
+		"7f5f856b-85ea-6876-0189-7bb9a8858f38"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1554056471706,
+	"owner": "1237354",
+	"public": false,
+	"requests": [
+		{
+			"id": "7f5f856b-85ea-6876-0189-7bb9a8858f38",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nauthorization: asf81284812asfa?¿fa\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "authorization",
+					"value": "asf81284812asfa?¿fa",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/products/5ca105d3fa72c51d5de7a268",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": "",
+			"method": "DELETE",
+			"collectionId": "57f6c039-cc4b-1dd2-01a7-4dde750b4e98",
+			"data": [
+				{
+					"key": "name",
+					"value": "description name",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "description",
+					"value": "description testr",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost:8080/api/products/",
+			"description": "delete product with authentication",
+			"descriptionFormat": "html",
+			"time": 1554056765297,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "c78256f9-c2cd-8c51-9a1b-1cfb22122d60",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/products/5ca0f134d50e3173c022d99e",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "name",
+					"value": "doo11sfafa",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "description",
+					"value": "ggggg",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1554056513253,
+			"name": "http://localhost:8080/api/products/5ca0f134d50e3173c022d99e",
+			"description": "list specifict product from id",
+			"collectionId": "57f6c039-cc4b-1dd2-01a7-4dde750b4e98",
+			"responses": []
+		},
+		{
+			"id": "d3ca3463-476c-e715-2b8d-463ef7a7d97d",
+			"headers": "Content-Type: application/x-www-form-urlencoded\nauthorization: asf81284812asfa?¿fa\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "authorization",
+					"value": "asf81284812asfa?¿fa",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/products/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": "",
+			"method": "PUT",
+			"collectionId": "57f6c039-cc4b-1dd2-01a7-4dde750b4e98",
+			"data": [
+				{
+					"key": "name",
+					"value": "description name",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "description",
+					"value": "description testr",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost:8080/api/products/",
+			"description": "create new product with authentication",
+			"descriptionFormat": "html",
+			"time": 1554056717870,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e74c5e35-8499-5767-15ca-937a58bf3f7d",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/products/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "57f6c039-cc4b-1dd2-01a7-4dde750b4e98",
+			"data": [
+				{
+					"key": "name",
+					"value": "doo11sfafa",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "description",
+					"value": "ggggg",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost:8080/api/products/",
+			"description": "list all products",
+			"descriptionFormat": "html",
+			"time": 1554056564078,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
