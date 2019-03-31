@@ -19,5 +19,13 @@ const DB_Products = class {
             "description": "examplec car description"
         }
     }
+    static addNewProduct({ name, description }) {
+        console.log(name, description)
+        return {
+            "id": 3,
+            "name": name,
+            "description": description
+        }
+    }
 }
 module.exports = DB_Products

@@ -1,4 +1,4 @@
-const DB_Products = require('../DB/products');
+const DB_Products = require('../../DB/products');
 const listAll = (req, res) => {
     try {
         const products = DB_Products.listAll()
@@ -18,8 +18,18 @@ const getFromId = (req, res) => {
     }
 
 }
+const addNewProduct = (req, res) => {
+    try {
+        const product = DB_Products.addNewProduct(req.body)
+        res.status(200).send({ 'status': 'ok', 'data': product })
+    } catch (error) {
+        console.error(error)
+        res.status(404).send({ message: 'products error' })
+    }
+}
 
 module.exports = {
     listAll,
-    getFromId
+    getFromId,
+    addNewProduct
 }
